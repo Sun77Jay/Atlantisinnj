@@ -1,0 +1,37 @@
+main {
+ background-image: url("https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&q=80&w=1530&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+}
+
+h1 {
+ text-align: center;
+ color: black;
+ font-family: Bangers;
+}
+
+p{
+ font-family: Bangers;
+ color: black;
+}
+
+.aquaboogie {
+    float: right;
+    width: 125px;
+    height: 125px;
+    border-style: solid;
+}
+
+#map {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;   
+ max-width: 100%;
+ height: auto;
+}
+
+.copyright1 {
+    color: #FF6C22;
+}
+
+.copyright2 {
+    color: #FF6C22;
+}

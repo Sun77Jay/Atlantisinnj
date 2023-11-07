@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantis In New Jersey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <link rel="icon" type="image/icon" href="">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bangers&family=Permanent+Marker&family=Sedgwick+Ave+Display&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<main>
+    <h1>Atlantis In New Jersey</h1>
+
+    <p><img class="aquaboogie" src="./media/hipposinagua.jpeg" alt="aquarium"> it comes to tourist attraction in the southern part of New Jersey, Atlantic City would be the go to spot when it comes to vacation and entertainment. Camden, New Jersey isn't the ideal spot for tourist to go on vacation.
+    NBA basketball team the Philadelphia 76ers practice facility, Freedom Mortgage Pavilion and the Battleship New Jersey Museum & Memorial are some of the highlights for the city of Camden. However there's an attraction in Camden 
+    that can bring an entire family together and arguably the main reason why a tourist would visit Camden is which is the Adventure Aquarium. I call it "Atlantis in New Jersey" because its a hidden gem in a city that's often in the news
+    for negative reasons. If theres one place in Camden I would tell a tourist to visit, it would definitely be The Adventure Aquarium aka "Atlantis". You'll find yourself immersed underwater engaging in interactive touch exhibits and 
+    exploring over 15,000 aquatic species. Those species includes different types of sharks, green & loggerhead turtles and two species of warm-weather penguins. The highlight of The Adventure Aquarium though is that it's the ONLY aquarium
+    in the world to exhibits Hippos!  I would recommend any person who is visiting Camden, New Jersey to go to the Adventure Aquarium. They're located at 1 Riverside Drive in Camden, NJ and they're open from 10 AM to 4PM Monday through 
+    Friday. Saturdays and Sundays its 9:30AM to 5PM and 11AM to 5PM respectively. Below there's a map that shows the area where The Adventure Aquarium is located at. There isnt much to do in the city but one bright spot is The Adventure
+    Aquarium aka "Atlantis".    
+    </p>
+    <br>
+<body>
+
+    <div id="map" style="width: 600px; height: 400px;"></div>
+    <script>
+
+        const map = L.map('map').setView([39.945880, //latitude
+            -75.131000], //longitude
+            13);    //zoom
+
+        L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+            attribution: 'Copyright Google Maps'
+            }).addTo(map);
+
+            var marker = L.marker([39.945880, -75.131000]).addTo(map);
+
+            var popup = L.popup()
+           .setLatLng([39.961966, -75.103257])
+           .setContent("Come Visit.")
+           .openOn(map);
+
+           marker.bindPopup("Come Visit.").openPopup();
+
+           function onMapClick(e) {
+           alert("You clicked the map at " + e.latlng);
+}
+
+           map.on('click', onMapClick);
+        
+       
+
+    </script>
+
+    <p class="copyright1">Tourists won't be disappointed if they take the opportunity to visit The Adventure
+    Aquarium. Right across the Delaware River from the aquarium is The Liberty Bell, The Edgar Allan Poe National
+    Historic Site, The Magic Gardens and The Smithsonian Institute in Philadelphia,PA.</p>  
+</body>
+<footer>
+    <p class="copyright2">&copy; 2023 Jay Suntana All Rights Reserved.</p>
+</footer>
+</main>
+</html>
