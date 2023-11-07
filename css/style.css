@@ -20,6 +20,10 @@ p{
     border-style: solid;
 }
 
+u {
+    color: orange;
+}
+
 #map {
  display: block;
  margin-left: auto;
@@ -29,9 +33,9 @@ p{
 }
 
 .copyright1 {
-    color: #FF6C22;
+    color: #191919;
 }
 
 .copyright2 {
-    color: #FF6C22;
+    color: #191919;
 }
